@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Home</h1>
+
+    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h1>is-valid-css-unit</h1><p><a href="https://travis-ci.org/user/repo"><img src="https://img.shields.io/travis/user/repo/master.png?style=flat-square" alt="Travis"></a>
+<a href="https://www.npmjs.org/package/npm-package"><img src="https://img.shields.io/npm/v/npm-package.png?style=flat-square" alt="npm package"></a>
+<a href="https://coveralls.io/github/user/repo"><img src="https://img.shields.io/coveralls/user/repo/master.png?style=flat-square" alt="Coveralls"></a></p>
+<p>Returns true if the given value is a valid CSS unit.</p>
+<h2>Install</h2><p>Install with <a href="https://www.npmjs.com/">npm</a>:</p>
+<pre class="prettyprint source lang-sh"><code>$ npm install --save is-valid-css-unit</code></pre><p>Install with <a href="https://yarnpkg.com">yarn</a>:</p>
+<pre class="prettyprint source lang-sh"><code>$ yarn add is-valid-css-unit</code></pre><h2>Usage</h2><pre class="prettyprint source lang-js"><code>import isValidCSSUnit from 'is-valid-css-unit'
+
+// Returns true
+isValidCSSUnit('12px')
+isValidCSSUnit('4.01%')
+isValidCSSUnit('-456.8deg')
+isValidCSSUnit('0.0ms')
+isValidCSSUnit('+0.0rem')
+isValidCSSUnit('-0.0dpi')
+isValidCSSUnit('.60vmin')
+isValidCSSUnit('10e3in')
+isValidCSSUnit('-3.4e-2em')
+
+// Returns false
+isValidCSSUnit('12.px')
+isValidCSSUnit('+-12.2%')
+isValidCSSUnit('12.1.1deg')
+isValidCSSUnit('-ms')
+isValidCSSUnit('.rem')
+isValidCSSUnit('%dpi')
+isValidCSSUnit('avmin')
+isValidCSSUnit('1ain')
+isValidCSSUnit('a1em')</code></pre><p>If you want to test for specific CSS units, you can import specific methods:</p>
+<pre class="prettyprint source lang-js"><code>import {
+  isFontUnit,
+  isTimeUnit,
+  isAnglegeUnit,
+  isViewportUnit,
+  isAbsoluteUnit,
+  isFrequencyUnit,
+  isPercentageUnit,
+  isResolutionUnit,
+} from 'is-valid-css-unit'
+
+// Returns true
+isFontUnit('12em')
+isTimeUnit('300ms')
+isAnglegeUnit('-360.5deg')
+isViewportUnit('50vw')
+isAbsoluteUnit('125px')
+isFrequencyUnit('5Hz')
+isPercentageUnit('100%')
+isResolutionUnit('+35dpi')
+
+// Returns false
+isFontUnit('12px')
+isTimeUnit('300%')
+isAnglegeUnit('-360.5vh')
+isViewportUnit('50dpi')
+isAbsoluteUnit('125rem')
+isFrequencyUnit('5s')
+isPercentageUnit('100rad')
+isResolutionUnit('+35kHz')</code></pre><ul>
+<li><code>isFontUnit</code>: Checks for valid CSS font units (<code>cap</code>, <code>ch</code>, <code>em</code>, <code>ex</code>, <code>ic</code>, <code>lh</code>, <code>rem</code>, <code>rlh</code>).</li>
+<li><code>isTimeUnit</code>: Checks for valid CSS time units (<code>s</code>, <code>ms</code>).</li>
+<li><code>isAngleUnit</code>: Checks for valid CSS angle units (<code>deg</code>, <code>grad</code>, <code>rad</code>, <code>turn</code>).</li>
+<li><code>isViewportUnit</code>: Checks for valid CSS viewport units (<code>vh</code>, <code>vw</code>, <code>vi</code>, <code>vb</code>, <code>vmin</code>, <code>vmax</code>).</li>
+<li><code>isAbsoluteUnit</code>: Checks for valid CSS absolute units (<code>px</code>, <code>cm</code>, <code>mm</code>, <code>Q</code>, <code>in</code>, <code>pc</code>, <code>pt</code>, <code>mozmm</code>).</li>
+<li><code>isFrequencyUnit</code>: Checks for valid CSS frequency units (<code>Hz</code>, <code>kHz</code>).</li>
+<li><code>isPercentageUnit</code>: Checks for valid CSS percentage units (<code>%</code>).</li>
+<li><code>isResolutionUnit</code>: Checks for valid CSS resolution units (<code>dpi</code>, <code>dpcm</code>, <code>dppx</code>, <code>x</code>).</li>
+</ul></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#ABSOLUTE_UNITS">ABSOLUTE_UNITS</a></li><li><a href="global.html#absoluteRegexp">absoluteRegexp</a></li><li><a href="global.html#ALL_UNITS">ALL_UNITS</a></li><li><a href="global.html#allRegexp">allRegexp</a></li><li><a href="global.html#ANGLE_UNITS">ANGLE_UNITS</a></li><li><a href="global.html#angleRegexp">angleRegexp</a></li><li><a href="global.html#FONT_UNITS">FONT_UNITS</a></li><li><a href="global.html#fontRegexp">fontRegexp</a></li><li><a href="global.html#FREQUENCY_UNITS">FREQUENCY_UNITS</a></li><li><a href="global.html#frequencyRegexp">frequencyRegexp</a></li><li><a href="global.html#generateRegExp">generateRegExp</a></li><li><a href="global.html#isAbsoluteUnit">isAbsoluteUnit</a></li><li><a href="global.html#isAnglegeUnit">isAnglegeUnit</a></li><li><a href="global.html#isFontUnit">isFontUnit</a></li><li><a href="global.html#isFrequencyUnit">isFrequencyUnit</a></li><li><a href="global.html#isPercentageUnit">isPercentageUnit</a></li><li><a href="global.html#isResolutionUnit">isResolutionUnit</a></li><li><a href="global.html#isTimeUnit">isTimeUnit</a></li><li><a href="global.html#isViewportUnit">isViewportUnit</a></li><li><a href="global.html#PERCENTAGE_UNITS">PERCENTAGE_UNITS</a></li><li><a href="global.html#percentageRegexp">percentageRegexp</a></li><li><a href="global.html#RESOLUTION_UNITS">RESOLUTION_UNITS</a></li><li><a href="global.html#resolutionRegexp">resolutionRegexp</a></li><li><a href="global.html#TIME_UNITS">TIME_UNITS</a></li><li><a href="global.html#timeRegexp">timeRegexp</a></li><li><a href="global.html#VIEWPORT_UNITS">VIEWPORT_UNITS</a></li><li><a href="global.html#viewportRegexp">viewportRegexp</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Sep 07 2018 16:17:15 GMT-0400 (Atlantic Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

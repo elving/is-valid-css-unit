@@ -1,0 +1,40 @@
+{
+  "name": "is-valid-css-unit",
+  "version": "1.0.0",
+  "description": "Returns true if the given value is a valid CSS unit.",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-web-module",
+    "clean": "nwb clean-module",
+    "prepublishOnly": "npm run build",
+    "test": "nwb test",
+    "test:coverage": "nwb test --coverage",
+    "test:watch": "nwb test --server",
+    "precommit": "lint-staged",
+    "docs": "jsdoc ./src/index.js -R ./README.md -d ./docs --verbose"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "jsdoc": "^3.5.5",
+    "lint-staged": "^7.2.2",
+    "nwb": "0.23.x",
+    "prettier": "^1.14.2"
+  },
+  "author": "Elving Rodriguez",
+  "homepage": "https://github.com/elving/is-valid-css-unit",
+  "license": "MIT",
+  "repository": "https://github.com/elving/is-valid-css-unit"
+}
