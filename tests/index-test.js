@@ -23,6 +23,7 @@ import isValidCSSUnit, {
  * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/number#Valid_numbers
  */
 const VALID_NUMBERS = [
+  '3', // A raw <integer> is also a <number>
   '12', // A raw <integer> is also a <number>
   '4.01', // Positive fraction
   '-456.8', // Negative fraction
