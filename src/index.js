@@ -103,7 +103,9 @@ export const ALL_UNITS = [].concat(
  */
 const generateRegExp = (units = []) =>
   new RegExp(
-    `(^[\\+\\-]?\\.?[0-9]+[e\\-]?\\.?)?[0-9]+(e\\-[0-9])?(${units.join('|')})`,
+    `(^[\\+\\-]?\\.?[0-9]+[e\\-]?\\.?)?[0-9]+(e\\-[0-9])?(${units.join(
+      '|',
+    )})?$`,
     'i',
   )
 

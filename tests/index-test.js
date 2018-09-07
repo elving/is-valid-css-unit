@@ -1,6 +1,7 @@
 import expect from 'expect'
 
 import isValidCSSUnit, {
+  ALL_UNITS,
   FONT_UNITS,
   TIME_UNITS,
   ANGLE_UNITS,
@@ -23,8 +24,7 @@ import isValidCSSUnit, {
  * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/number#Valid_numbers
  */
 const VALID_NUMBERS = [
-  '3', // A raw <integer> is also a <number>
-  '12', // A raw <integer> is also a <number>
+  '5', // A raw <integer> is also a <number>
   '4.01', // Positive fraction
   '-456.8', // Negative fraction
   '0.0', // Zero
@@ -80,6 +80,10 @@ const UNIT_GROUPS = [
   {
     label: 'Resolution Units',
     units: RESOLUTION_UNITS,
+  },
+  {
+    label: 'Unitless',
+    units: [''],
   },
 ]
 

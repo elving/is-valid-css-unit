@@ -92,6 +92,10 @@ isResolutionUnit('+35kHz')
 - `isPercentageUnit`: Checks for valid CSS percentage units (`%`).
 - `isResolutionUnit`: Checks for valid CSS resolution units (`dpi`, `dpcm`, `dppx`, `x`).
 
+## Playground
+
+You can play around with different values here: [http://refiddle.com/refiddles/5b92e39c75622d4ca9270000](http://refiddle.com/refiddles/5b92e39c75622d4ca9270000)
+
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
