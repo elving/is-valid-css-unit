@@ -96,9 +96,9 @@ isResolutionUnit('+35kHz')
 
 You can play around with different values here: [http://refiddle.com/refiddles/5b92e39c75622d4ca9270000](http://refiddle.com/refiddles/5b92e39c75622d4ca9270000)
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[build-badge]: https://img.shields.io/travis/elving/is-valid-css-unit/master.png?style=flat-square
+[build]: https://travis-ci.org/elving/is-valid-css-unit
+[npm-badge]: https://img.shields.io/npm/v/is-valid-css-unit.png?style=flat-square
+[npm]: https://www.npmjs.com/package/is-valid-css-unit
+[coveralls-badge]: https://img.shields.io/coveralls/elving/is-valid-css-unit/master.png?style=flat-square
+[coveralls]: https://coveralls.io/github/elving/is-valid-css-unit
