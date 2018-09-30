@@ -101,9 +101,10 @@ export const ALL_UNITS = [].concat(
  * @param {Array} units - CSS units to match for.
  * @returns {RegExp}
  */
+
 const generateRegExp = (units = []) =>
   new RegExp(
-    `(^[\\+\\-]?\\.?[0-9]+[e\\-]?\\.?)?[0-9]+(e\\-[0-9])?(${units.join(
+    `^[\\-\\+]?(?!00|0\\d)(\\.?[0-9]+[e\\-\\+]?\\.?)?[0-9]+(e[\\-\\+]?[0-9])?(${units.join(
       '|',
     )})?$`,
     'i',
